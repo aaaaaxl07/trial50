@@ -217,17 +217,17 @@ def Create():
             'accept-language': 'en-GB, en;q=0.9, en-US;q=0.8,en;q=0.7',
             'cache-control': 'max-age=0',
             'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not: A-Brand"; v="24", "Chromium";V="116"',
-            'sec-ch-ua-full-version-list': '"Not:A-Brand"; v "24.0.0.0", "Chromium";v="116.0.5845.240"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"11.0.0"',
+            'sec-ch-ua': '"Not: A-Brand"; v="99", "Chromium";V="118"',
+            'sec-ch-ua-full-version-list': '"Not:A-Brand"; v "99.0.0.0","Google Chrome";v="118.0.5993.120", "Chromium";v="118.0.5993.120"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-ch-ua-platform-version': '"15.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': random_ua()}
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'}
         url1 = 'https://m.facebook.com/reg/?is_two_steps_login=0&cid=103&refsrc=deprecated&soft=hjk'
         data1 = None
         response1 = requests.get(url1, headers=headers1, data=data1)    
@@ -237,17 +237,17 @@ def Create():
             'accept-language': 'en-GB, en;q=0.9, en-US;q=0.8,en;q=0.7',
             'cache-control': 'max-age=0',
             'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not: A-Brand"; v="24", "Chromium";V="116"',
-            'sec-ch-ua-full-version-list': '"Not:A-Brand"; v "24.0.0.0", "Chromium";v="116.0.5845.240"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"11.0.0"',
+            'sec-ch-ua': '"Not: A-Brand"; v="99", "Chromium";V="118"',
+            'sec-ch-ua-full-version-list': '"Not:A-Brand"; v "99.0.0.0","Google Chrome";v="118.0.5993.120", "Chromium";v="118.0.5993.120"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-ch-ua-platform-version': '"15.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': random_ua()}
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'}
         url2 = 'https://mbasic.facebook.com/reg/submit/'
         data2 = {
             'lsd': find(response1.text,"lsd"),
@@ -303,17 +303,17 @@ def Create():
         'accept-language': 'en-US, en;q=0.9, en-US;q=0.8, en;q=0.7',
         'cache-control': 'max-age=0',
         'sec-ch-prefers-color-scheme': 'light',
-        'sec-ch-ua': '"Not: A-Brand"; v="24", "Chromium";V="116"',
-        'sec-ch-ua-full-version-list': '"Not:A-Brand"; v "24.0.0.0", "Chromium";v="116.0.5845.240"',
-        'sec-ch-ua-mobile': '?1',
-        'sec-ch-ua-platform': '"Android"',
-        'sec-ch-ua-platform-version': '"11.0.0"',
+        'sec-ch-ua': '"Not: A-Brand"; v="99", "Chromium";V="118"',
+        'sec-ch-ua-full-version-list': '"Not:A-Brand"; v "99.0.0.0","Google Chrome";v="118.0.5993.120", "Chromium";v="118.0.5993.120"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"',
+        'sec-ch-ua-platform-version': '"15.0.0"',
         'sec-fetch-dest': 'document',
         'sec-fetch-mode': 'navigate',
         'sec-fetch-site': 'none',
         'sec-fetch-user': '?1',
         'upgrade-insecure-requests': '1',
-        'user-agent': random_ua()}
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'}
         for i in  re.findall('href="/changeemail(.*?)"',response.text):
           url="/changeemail"+i
         response = requests.get("https://mbasic.facebook.com"+url, headers=headers)
@@ -323,17 +323,17 @@ def Create():
             'accept-language': 'en-US, en;q=0.9, en-US;q=0.8, en;q=0.7',
             'cache-control': 'max-age=0',
             'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not: A-Brand"; v="24", "Chromium";V="116"',
-            'sec-ch-ua-full-version-list': '"Not:A-Brand"; v "24.0.0.0", "Chromium";v="116.0.5845.240"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"11.0.0"',
+            'sec-ch-ua': '"Not: A-Brand"; v="99","Google Chrome";v="118","Chromium";V="118"',
+            'sec-ch-ua-full-version-list': '"Not:A-Brand"; v "99.0.0.0", "Chromium";v="118.0.5993.120", "Google Chrome";v="118.0.5993.120"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-ch-ua-platform-version': '"15.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': random_ua()}
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'}
         data = {
             'fb_dtsg': re.search('name="fb_dtsg" value="(.*?)"',str(response.text)).group(1),
             'jazoest': re.search('name="jazoest" value="(.*?)"',str(response.text)).group(1),
@@ -356,17 +356,17 @@ def Create():
             'accept-language': 'en-GB,en;q=0.9,en-US;q=0.8,en;q=0.7',
             'cache-control': 'max-age=0',
             'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not;A-Brand";v="99","Chromium";v="112"',
-            'sec-ch-ua-full-version-list': '"Not;A-Brand";v="99.0.0.0","Chromium";v="112.0.5615.137"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': 'Android',
-            'sec-ch-ua-platform-version': '11.0.0',
+            'sec-ch-ua': '"Not;A-Brand";v="99","Google Chrome";v="118","Chromium";v="118"',
+            'sec-ch-ua-full-version-list': '"Not;A-Brand";v="99.0.0.0","Chromium";v="118.0.5993.120","Google Chrome";v="118.0.5993.120"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': 'Windows',
+            'sec-ch-ua-platform-version': '15.0.0',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': random_ua()}
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'}
         data = {'contact': em,
             'type': 'submit',
             'is_soft_cliff': False,
